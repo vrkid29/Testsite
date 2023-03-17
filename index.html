@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Button Download</title>
+	<title>Button Hover Effect</title>
 	<style>
 		.center {
 			display: flex;
@@ -27,21 +27,7 @@
 </head>
 <body>
 	<div class="center">
-		<button class="button" onclick="downloadFile()">Download File</button>
+		<button class="button">Click me!</button>
 	</div>
-	<script>
-		function downloadFile() {
-			// Replace this with the URL of the file you want to download
-			var fileUrl = "https://example.com/myfile.txt";
-			// Create a temporary link to the file
-			var link = document.createElement("a");
-			link.href = fileUrl;
-			link.download = "myfile.txt";
-			// Trigger the download
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-		}
-	</script>
 </body>
 </html>
